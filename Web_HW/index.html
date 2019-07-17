@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Visulization Dashboard</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-default" style="background-color: #f1f1f1!important">
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="background-color:aqua; margin-left:2cm; "href="#"; ></i>Lattitude</i></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <!-- Navigation Bar with glyphicons -->
+                        <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="temp.html">Max Temperature</a></li>
+                                    <li><a href="humidity.html">Humidity</a></li>
+                                    <li><a href="cloud.html">Cloudiness</a></li>
+                                    <li><a href="windspeed.html">Wind Speed</a></li>
+                                    <li role="separator" class="divider"></li>
+                                  
+                                    <li><a href="index.html">Home</a></li>
+                                  </ul>
+                                </li>
+                                <li><a href="comparison.html">Comparison</a></li>
+                                <li><a href="data.html">Data</a></li>
+                                
+                              </ul>
+            </div>
+        </nav>
+
+        <!-- User Row 1-->
+        <div class="row user-block" style="background-color: #f1f1f1!important">
+            <!-- information -->
+            <div class="col-md-7"; style="padding:0.5cm; margin-left:1cm;margin-right:0.2cm;
+                margin-top:1cm;margin-bottom:1cm; background-color:white">
+                <!-- Image uses the thumbnail and circle class -->
+                <h2 style="color:blue" <i>Summary: Latitude vs. X </i></h2>
+                <hr>
+                <img style="float:left"; margin=1cm; width="300"; height="300"
+                     src="Resources\assets\images\Fig1.png" alt="Placeholder" 
+                     class="img-thumbnail">
+                <p>The purpose of this project was to analyze how weather changes as you get 
+                    closer to the equator. To accomplish this analysis, we first pulled data 
+                    form the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                    After assembling the dataset, we used Matplotlib to plot various aspects
+                    of the weather vs. latitude. Factors we looked at inclued: temperature,cloudiness,
+                     wind speed and humidity. This site provides the source data and visualizations 
+                     created as part of the analysis. as well as explainations and descriptions of any 
+                     trends and correlations witnessed.
+                </p>
+            </div>
+
+            <div class="col-md-4"; style="padding:1cm; margin-left:0.2cm;margin-right:0.5cm;
+            margin-top:1cm; margin-bottom:1cm;  background-color:white">
+            <h4 style="color:blue" <i>Visualizations</i></h4>
+            <hr>
+            <a href="cloud.html"><img style="float:left"; padding=0.2cm; margin-bottom:0.2cm; width="150"; height="150"
+            src="Resources\assets\images\Fig3.png" alt="Placeholder" 
+            class="img-thumbnail">
+            <a href="humidity.html"><img style="float:right"; padding=0.2cm; margin-bottom:0.2cm; width="150"; height="150"
+            src="Resources\assets\images\Fig2.png" alt="Placeholder" 
+            class="img-thumbnail">
+            <a href="temp.html"><img style="float:left"; padding=0.2cm; width="150"; height="150"
+            src="Resources\assets\images\Fig1.png" alt="Placeholder" 
+            class="img-thumbnail">
+            <a href="windspeed.html"><img style="float:right"; padding=0.2cm; width="150"; height="150"
+            src="Resources\assets\images\Fig4.png" alt="Placeholder" 
+            class="img-thumbnail">
+            <hr>            
+                            
+                
+            </div>
+        </div>
+
+        <!-- User Row 2-->
+        <div class="text-center" style="background-color: gray">
+            <center <i class="glyphicon glyphicon-globe"></i>CopyrightRutgetsBootcamp2019</cneter>         
+        </div>
+
+</body>
+
+
+</html>
